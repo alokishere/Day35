@@ -1,7 +1,7 @@
 
 // 1 :- =  Accept value from user and assign in the array
 
-/*
+
 const prompt = require('prompt-sync')();
 let size = Number(prompt("Enter the size of Array"))
 let arr = new Array(size)
@@ -11,12 +11,12 @@ for(let i = 0; i < size; i++){
 }
 console.log(arr)
 
-*/
+
 
 
 //2 :- =  Sum of array’s element
 
-/*
+
 const prompt = require('prompt-sync')();
 let size = Number(prompt("Enter the size of Array"))
 
@@ -29,12 +29,12 @@ for(let i = 0; i < size; i++){
 }
 console.log("Sum: " + sum)
 
-*/
+
 
 //3:= Max element from array
 
 
-/*
+
 let arr = [1, 3, 100,5, 7, 3, 73, 86, 32, 70, 40]
 
 let max = arr[0]
@@ -46,13 +46,13 @@ for (let i = 1; i < arr.length; i++) {
 }
 console.log("max number is " + max)
 
-*/
+
 
 
 
 //4:= Min element from array
 
-/*
+
 
 let arr = [10, 3, 100,5, 7, 3, 73, 86, 32, 70, 40]
 
