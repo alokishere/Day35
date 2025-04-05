@@ -1,7 +1,7 @@
 
 // 1 :- =  Accept value from user and assign in the array
 
-/*
+
 const prompt = require('prompt-sync')();
 let size = Number(prompt("Enter the size of Array"))
 let arr = new Array(size)
@@ -11,12 +11,12 @@ for(let i = 0; i < size; i++){
 }
 console.log(arr)
 
-*/
+
 
 
 //2 :- =  Sum of array’s element
 
-/*
+
 const prompt = require('prompt-sync')();
 let size = Number(prompt("Enter the size of Array"))
 
@@ -29,12 +29,12 @@ for(let i = 0; i < size; i++){
 }
 console.log("Sum: " + sum)
 
-*/
+
 
 //3:= Max element from array
 
 
-/*
+
 let arr = [1, 3, 100,5, 7, 3, 73, 86, 32, 70, 40]
 
 let max = arr[0]
@@ -46,13 +46,13 @@ for (let i = 1; i < arr.length; i++) {
 }
 console.log("max number is " + max)
 
-*/
+
 
 
 
 //4:= Min element from array
 
-/*
+
 
 let arr = [10, 3, 100,5, 7, 3, 73, 86, 32, 70, 40]
 
@@ -65,27 +65,6 @@ for (let i = 1; i < arr.length; i++) {
 }
 console.log("min number is " + min)
 
-*/
-
-
-
-
-
-
-// let size = Number(prompt("Enter the size of Array"))
-// function calculateSumAndMean(size, value) {
-
-// let sum = 0
-// let arr = new Array(size)
-// let value = Number(prompt("Enter the element"))
-//     arr[i] = value;
-//     sum = sum+value;
-// }
-// console.log("Sum: " + sum)
-// }
-
-// // module.exports = { calculateSumAndMean };
-// calculateSumAndMean()
 
 
 
@@ -93,34 +72,55 @@ console.log("min number is " + min)
 
 
 
-// const prompt = require('prompt-sync')();
+let size = Number(prompt("Enter the size of Array"))
+function calculateSumAndMean(size, value) {
+
+let sum = 0
+let arr = new Array(size)
+let value = Number(prompt("Enter the element"))
+    arr[i] = value;
+    sum = sum+value;
+}
+console.log("Sum: " + sum)
+}
+
+// module.exports = { calculateSumAndMean };
+calculateSumAndMean()
 
 
-// let n = Number(prompt("Enter the size of Array"))
 
-// let sum = 0;
-// let arr = new Array(n)
 
-// for (let i = 0; i < n; i++) {
-//     let val = Number(prompt("Enter the element"))
 
-//     // sum += arr[i];
-//     arr[i] = val
-//     sum = sum + arr[i]
-// }
 
-// let mean = (sum / n).toFixed(1);
 
-// // return { sum, mean };
+const prompt = require('prompt-sync')();
 
-// console.log("Sum:"+sum );
-// console.log("Mean:" + mean );
+
+let n = Number(prompt("Enter the size of Array"))
+
+let sum = 0;
+let arr = new Array(n)
+
+for (let i = 0; i < n; i++) {
+    let val = Number(prompt("Enter the element"))
+
+    // sum += arr[i];
+    arr[i] = val
+    sum = sum + arr[i]
+}
+
+let mean = (sum / n).toFixed(1);
+
+// return { sum, mean };
+
+console.log("Sum:"+sum );
+console.log("Mean:" + mean );
 
 
 
 
 //5 := Second max element from array
-/*
+
 
 let arr = [1,3,5,3,7,3,8,4,90,90,90,76,45,3,4,23,32,4,56,33]
 let max =  Math.max(arr[0],arr[1])
@@ -139,12 +139,12 @@ for(let i = 2; i < arr.length;i++){
 console.log("second max is : " +  sMax);
 
 
-*/
+
 
 
 //6 := Second min element from array
 
-/*
+
 
 let arr = [10,20,30,50,60,70,30,80,4,90,90,90,76,45,35,4,23,32,4,56,33,60]
 let min =  Math.min(arr[0],arr[1])
@@ -163,13 +163,13 @@ for(let i = 2; i <arr.length; i++) {
 console.log("Second min is " + smin);
 
 
-*/
+
 
 
 
 //. Reverse the array
 
-/*
+
 let arr = [1,2,3,4,5,6,6,7]
  let ar = new Array(arr.length)
  let j = 0
@@ -192,11 +192,11 @@ while(i<j){
 console.log(arr);
 
 
-*/
+
 
 
 //All zeroes to left and all ones to right 
-/*
+
 let arr = [1,0,0,1,0,1,1,0]
  let i= 0, j = 0
   while(i < arr.length){
@@ -210,22 +210,22 @@ let arr = [1,0,0,1,0,1,1,0]
   }
   console.log(arr);
  
-*/
+
 
 
 //Array  right Rotation by 1
 
-// let arr = [1,2,3,4,5,6,6,7]
-//  let temp1 = arr[arr.length-1 ]
-//  for(let i = arr.length-1;  i > 0; i--){
-//     arr[i] = arr[i-1]
-//  }
-//  arr[0] = temp1
-//  console.log(arr);
+let arr = [1,2,3,4,5,6,6,7]
+ let temp1 = arr[arr.length-1 ]
+ for(let i = arr.length-1;  i > 0; i--){
+    arr[i] = arr[i-1]
+ }
+ arr[0] = temp1
+ console.log(arr);
 
-//Array  left Rotation by 1  
+Array  left Rotation by 1  
 
-/*
+
 let arr = [1,2,3,4.9,12,7]
  let temp = arr[0 ]
  for(let i = 0;  i < arr.length-1; i++){
@@ -234,7 +234,7 @@ let arr = [1,2,3,4.9,12,7]
  arr[arr.length-1] = temp
  console.log(arr);
 
- */
+ 
 
 
 
@@ -244,7 +244,7 @@ let arr = [1,2,3,4.9,12,7]
 
 //Array  left Rotation by k  
 
-/*
+
 let prompt = require("prompt-sync")()
  let k = Number(prompt("Enter the value of k"))
 
@@ -310,13 +310,13 @@ Reverse(arr, k, arr.length-1)
 
 
  
-*/
+
 
 
 
 //  Linear Search an array - If element found print the index else -1
 
-/*
+
 let prompt = require("prompt-sync")()
  
   let arr = [3,5,3,22,55,67,65,44,89,69,90,50,677,67,10]
@@ -331,13 +331,13 @@ let prompt = require("prompt-sync")()
    if(index == -1) console.log("target not found");
    else console.log("traget found at " + index + " index");
    
-   */
+   
 
 
 
 //binary search
 
-/*
+
 
 let prompt = require("prompt-sync")()
 
@@ -361,4 +361,4 @@ function binarySearch(arr,target){
     return -1
 }
 
-*/
+
